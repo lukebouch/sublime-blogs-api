@@ -2,9 +2,9 @@
 
 namespace LukeBouch\SublimeBlogsApi;
 
+use LukeBouch\SublimeBlogsApi\Commands\SublimeBlogsApiCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use LukeBouch\SublimeBlogsApi\Commands\SublimeBlogsApiCommand;
 
 class SublimeBlogsApiServiceProvider extends PackageServiceProvider
 {

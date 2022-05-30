@@ -3,8 +3,8 @@
 namespace LukeBouch\SublimeBlogsApi\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use LukeBouch\SublimeBlogsApi\SublimeBlogsApiServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
