@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace LukeBouch\SublimeBlogsApi\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class SublimeBlogsApiCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'sublime-blogs-api';
 
     public $description = 'My command';
 

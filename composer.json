@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "lukebouch/sublime-blogs-api",
+    "description": "A laravel package to interact with the Sublime Blogs API.",
     "keywords": [
-        ":vendor_name",
+        "lukebouch",
         "laravel",
-        ":package_slug"
+        "sublime-blogs-api"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/lukebouch/sublime-blogs-api",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Luke Bouch",
+            "email": "luke@lukebouch.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "LukeBouch\\SublimeBlogsApi\\": "src",
+            "LukeBouch\\SublimeBlogsApi\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "LukeBouch\\SublimeBlogsApi\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -51,15 +51,19 @@
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "LukeBouch\\SublimeBlogsApi\\SublimeBlogsApiServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "SublimeBlogsApi": "LukeBouch\\SublimeBlogsApi\\Facades\\SublimeBlogsApi"
             }
         }
     },
